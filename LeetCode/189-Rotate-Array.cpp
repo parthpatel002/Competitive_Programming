@@ -13,14 +13,14 @@ public:
     
     void rotate(vector<int>& nums, int k) {
         
-        // Solution 1:
+        // Solution 1 (https://leetcode.com/problems/rotate-array/solution/):
         // int n = nums.size();
         // k = k % n;
         // reverse(nums, 0, n-1);
         // reverse(nums, 0, k-1);
         // reverse(nums, k, n-1);
         
-        // Solution 2: Cyclic Reordering
+        // Solution 2: Cyclic Reordering (https://leetcode.com/problems/rotate-array/solution/):
         // int n = nums.size();
         // k = k % n;
         // if (k == 0)
@@ -41,7 +41,7 @@ public:
         //     }
         // }
         
-        // Solution 3: Cyclic Reordering (in Reverse)
+        // Solution 3: Cyclic Reordering (in Reverse) (https://www.geeksforgeeks.org/array-rotation/):
         // int n = nums.size();
         // k = k % n;
         // k = (n - k) % n;
