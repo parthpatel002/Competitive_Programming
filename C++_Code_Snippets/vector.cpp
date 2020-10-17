@@ -14,6 +14,9 @@ vector<int> vec(arr, arr + n);
 // Initializing from another vector
 vector<int> vec2(vec1);
 
+// 2D Empty Array
+return vector<vector<int>>{};
+
 // Append element at end of vector
 // Time complexity is O(1)
 vec.push_back(element);
