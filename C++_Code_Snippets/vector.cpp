@@ -1,9 +1,11 @@
 vector<int> vec;
 
 // Append element at end of vector
+// Time complexity is O(1)
 vec.push_back(element);
 
 // Remove last element
+// Time complexity is O(1)
 vec.pop_back();
 
 // Size of vector
@@ -21,4 +23,6 @@ vec.insert(vec.begin() + i, 7); // With return value (as iterator to start of mo
 
 // inserts 4 two times at i-th index
 iterator = vec.insert(vec.begin() + i, 2, 4);
+
+// Time complexity of insert in vector is O(N + M) where N is the number of elements inserted and M is the number of the elements moved.
 
