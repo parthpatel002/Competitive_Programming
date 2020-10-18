@@ -19,7 +19,7 @@ cout << PAIR1.second;
 // Similar behaviour with Not Equal (!=) operator.
 
 // Logical (>=, <=, <, >) operators with pair: 
-For given two pairs pair1 and pair2, the logical operators returns 0 or 1 by only comparing the first value of the pair.
+// For given two pairs pair1 and pair2, the logical operators returns 0 or 1 by only comparing the first value of the pair.
 
 // Swap the contents of one pair object with the contents of another pair object. The pairs must be of same type.
 pair1.swap(pair2);
