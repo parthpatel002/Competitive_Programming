@@ -48,7 +48,9 @@ class ParkingSystem {
   private:
     vector<int> capacity;
     vector<int> occupied;
+    vector<int> nums;
+    vector<int> arr;
   public:
-    ParkingSystem(int big, int medium, int small) : capacity(vector{big, medium, small}) , occupied(vector(3, 0)) {}
+    ParkingSystem(int big, int medium, int small) : capacity(vector{big, medium, small}) , occupied(vector(3, 0)), nums(vector<int>()), arr({}) {}
 };
 
