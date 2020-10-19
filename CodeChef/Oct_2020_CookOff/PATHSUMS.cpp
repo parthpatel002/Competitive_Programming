@@ -4,6 +4,9 @@
 
 #define M 5 // M can be any no. in [1, 10^5-1] (from constraints mentioned in the problem).
 
+// Given problem can be reduced to assigning a number from {M, M+1} to each node s.t. no two adjacent
+// nodes are assigned the same number (this is always possible because it is a tree and has no cycles.
+
 using namespace std;
 
 void recurse(int root, vector<vector<int>>& mat, vector<int>& assign, int val){
