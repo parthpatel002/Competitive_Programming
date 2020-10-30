@@ -2,12 +2,6 @@ class Solution {
 public:
     bool canReach(vector<int>& arr, int start) {
         
-        if (arr.size() == 1){
-            if (arr[0] == 0)
-                return true;
-            return false;
-        }
-        
         if (arr[start] == 0)
             return true;
         
