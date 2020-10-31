@@ -12,3 +12,7 @@ string s2 = s.substr(1); // "arth"
 string s = "123";
 int fid = stoi(s);
 cout << fid << endl; // 123
+
+// Integer to String
+string s = std::to_string(425);
+cout << s << endl; // 425
