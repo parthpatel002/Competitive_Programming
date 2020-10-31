@@ -13,14 +13,17 @@
 class Solution {
 public:
     void recoverTree(TreeNode* root) {
+        
         vector<pair<TreeNode*, TreeNode*>> vec;
-        TreeNode* temp = root;
         stack<TreeNode*> st;
+        TreeNode* temp = root;
         while(temp->left != NULL){
             st.push(temp);
             temp = temp->left;
         }
+        
         TreeNode* prev = temp;
+        
         if(temp->right != NULL){
             temp = temp->right;
             while(temp != NULL){
@@ -28,7 +31,9 @@ public:
                 temp = temp->left;
             }
         }
+        
         TreeNode* curr;
+        
         while(!st.empty()){
             curr = st.top();
             st.pop();
@@ -41,6 +46,7 @@ public:
                 vec.push_back(make_pair(prev, curr));
             prev = curr;
         }
+        
         if(vec.size() == 1){
             int tmp = (vec[0].first)->val;
             (vec[0].first)->val = (vec[0].second)->val;
@@ -51,5 +57,6 @@ public:
             (vec[0].first)->val = (vec[1].second)->val;
             (vec[1].second)->val = tmp;
         }
+        
     }
 };
