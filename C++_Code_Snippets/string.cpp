@@ -8,3 +8,7 @@ string s = "Parth";
 string s1 = s.substr(1, 3); // "art"
 string s2 = s.substr(1); // "arth"
 
+// String to Integer
+string s = "123";
+int fid = stoi(s);
+cout << fid << endl; // 123
