@@ -24,3 +24,23 @@ private:
 public:
     RandomizedSet() : umap1({}), umap2(unordered_map<int, int>()) {}
 };
+
+// Custom Hash Function
+// https://github.com/parthpatel002/Competitive_Programming/blob/main/LeetCode/464-Can-I-Win.cpp 
+struct HASH {
+  size_t operator() (const pair<vector<bool>, pair<int, int>>& x) const {
+    int N = x.first.size();
+    long long sum = 0;
+    for(int i = 0; i < N; i++){
+        sum += x.first[i];
+        sum *= 2;
+    }
+    sum *= 1000;
+    sum += x.second.first;
+    sum *= 10;
+    sum += x.second.second;
+    return hash<long long>()(sum);
+  }
+};
+unordered_map<pair<vector<bool>, pair<int, int>>, bool, HASH> umap;
+
