@@ -2,6 +2,9 @@
 #include <bits/stdc++.h> 
 sort(vec.begin(), vec.end());
 
+// Sort in descending order:
+sort(vec.begin(), vec.end(), greater<int>());
+
 // Sorting a vector of vectors [according to first element and resolving ties with subsequent elements].
 // Useful for vector of size-2 vectors (https://github.com/parthpatel002/Competitive_Programming/blob/main/LeetCode/56-Merge-Intervals.cpp) .
 vector<vector<int>> vec;
