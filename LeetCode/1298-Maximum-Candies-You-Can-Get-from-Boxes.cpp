@@ -3,8 +3,8 @@ public:
     int maxCandies(vector<int>& status, vector<int>& candies, vector<vector<int>>& keys, vector<vector<int>>& containedBoxes, vector<int>& initialBoxes) {
         int N = status.size();
         vector<bool> visited(N, false); // Whether we can reach a box or not
-        vector<bool> hasKey(N, false); // Whether we have a key for a box or not
-        vector<bool> used(N, false); // whether we have counted candies from a box or not
+        vector<bool> hasKey(N, false); // Whether we have the key for a box or not
+        vector<bool> used(N, false); // whether we have counted the candies present in a box or not
         int cnt = 0;
         queue<int> q;
         for(int i = 0; i < initialBoxes.size(); i++){
