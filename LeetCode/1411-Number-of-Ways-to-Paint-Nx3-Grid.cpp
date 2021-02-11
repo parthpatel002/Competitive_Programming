@@ -15,8 +15,8 @@ public:
             b = b_;
         }
         // We multiply both a and b by 6 since there are:
-        // 6 ways to arrange tiles s.t. first row has only two distinct colors, and 
         // 6 ways to arrange tiles s.t. first row has all three colors.
+        // 6 ways to arrange tiles s.t. first row has only two distinct colors, and 
         long long int ans = (6*a + 6*b) % mod;
         return ans;
     }
